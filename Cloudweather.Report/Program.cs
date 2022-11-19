@@ -1,6 +1,7 @@
 using Cloudweather.Report.BuisinessLogic;
 using Cloudweather.Report.Config;
 using Cloudweather.Report.DataAccess;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
