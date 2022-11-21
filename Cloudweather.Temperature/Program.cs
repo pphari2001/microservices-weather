@@ -32,8 +32,8 @@ app.MapGet("/observation/{zip}", async (string zip, [FromQuery] int? days, Tempe
 app.MapPost("/observation", async (Temperature temperature, TemperatureDbContext db) =>
 {
     temperature.CreatedOn = temperature.CreatedOn.ToUniversalTime();
-    db.AddAsync(temperature);
-    db.SaveChangesAsync();
+    await db.AddAsync(temperature);
+    await db.SaveChangesAsync();
 });
 
 app.Run();

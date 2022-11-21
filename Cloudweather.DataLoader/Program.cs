@@ -21,7 +21,9 @@ var precipServicePort = precipServiceConfig["Port"];
 var zipCodes = new List<string>
 {
     "95134",
-    "94041"
+    "90033",
+    "90034",
+    "90035"
 };
 
 Console.WriteLine("Starting Data load..");
@@ -43,6 +45,7 @@ foreach (var zip in zipCodes)
         var temps = PostTemp(zip, day, tempHttpClient);
         PostPrecip(temps[0], zip, day, precipHttpClient);
 
+        Thread.Sleep(1000);
 
     }
 }
