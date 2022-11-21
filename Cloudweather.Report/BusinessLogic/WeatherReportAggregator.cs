@@ -1,6 +1,7 @@
 ﻿using Cloudweather.Report.Config;
 using Cloudweather.Report.DataAccess;
 using Cloudweather.Report.Models;
+using Microsoft.Extensions.Options;
 using System.Text.Json;
 
 namespace Cloudweather.Report.BusinessLogic
@@ -24,13 +25,13 @@ namespace Cloudweather.Report.BusinessLogic
 
         public WeatherReportAggregator(IHttpClientFactory http,
             ILogger<WeatherReportAggregator> logger,
-            WeatherDataConfig weatherDataConfig,
+            IOptions<WeatherDataConfig> weatherDataConfig,
             WeatherReportDbContext db
             )
         {
             _http = http;
             _logger = logger ;
-            _weatherDataConfig = weatherDataConfig;
+            _weatherDataConfig = weatherDataConfig.Value;
             _db = db;
 
         }
