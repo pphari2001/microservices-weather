@@ -44,9 +44,6 @@ foreach (var zip in zipCodes)
     {
         var temps = PostTemp(zip, day, tempHttpClient);
         PostPrecip(temps[0], zip, day, precipHttpClient);
-
-        Thread.Sleep(1000);
-
     }
 }
 
