@@ -3,7 +3,7 @@ using Cloudweather.Report.DataAccess;
 using Cloudweather.Report.Models;
 using System.Text.Json;
 
-namespace Cloudweather.Report.BuisinessLogic
+namespace Cloudweather.Report.BusinessLogic
 {
     public interface IWeatherReportAggregator
     {

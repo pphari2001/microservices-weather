@@ -1,4 +1,4 @@
-using Cloudweather.Report.BuisinessLogic;
+using Cloudweather.Report.BusinessLogic;
 using Cloudweather.Report.Config;
 using Cloudweather.Report.DataAccess;
 using Microsoft.AspNetCore.Mvc;
