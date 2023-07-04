@@ -26,6 +26,8 @@ var zipCodes = new List<string>
     "90035"
 };
 
+Console.WriteLine("Update to check the temp branch..");
+
 Console.WriteLine("Starting Data load..");
 
 Console.WriteLine("New changes..");
