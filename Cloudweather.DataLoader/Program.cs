@@ -28,6 +28,8 @@ var zipCodes = new List<string>
 
 Console.WriteLine("Starting Data load..");
 
+Console.WriteLine("New changes..");
+
 var tempHttpClient = new HttpClient();
 tempHttpClient.BaseAddress = new Uri($"http://{tempServiceHost}:{tempServicePort}");
 
